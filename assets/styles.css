@@ -113,3 +113,18 @@
 .todo-app__cross:hover {
     color: #004e92;
 }
+
+@media (max-width: 400px) {
+    .container {
+        padding: 2rem .5rem .5rem .5rem;
+    }
+
+    .todo-app__btn {
+        padding: 0.2rem 1rem;
+        font-size: 1rem;
+    }
+
+    .todo-app__list-item {
+        font-size: 1rem;
+    }
+}
