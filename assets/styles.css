@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-width: fit-content;
+    min-height: 100vh;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  
+    background: linear-gradient(to right, #004e92, #000428);
+    padding: 2rem;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 4rem auto 1rem;
+    padding: 1rem 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.todo-app__header {
+    color: #000428;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.todo-app__logo {
+    width: 30px;
+    margin-left: 1rem;
+}
+
+.todo-list__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.todo-app__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.todo-app__btn {
+    border: none;
+    outline: none;
+    padding: .5rem 2rem;
+    background: #ff5945;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 1.8rem;
+}
+
+.todo-app__list-item {
+    position: relative;
+    list-style: none;
+    font-size: 1.2rem;
+    padding: .8rem .5rem .9rem 2.5rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.todo-app__list-item::before {
+    content: '';
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-image: url(/ToDoList/assets/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: .95rem;
+    left: .5rem;
+}
+
+.todo-app__list-item.checked {
+    color: #004e9260;
+    text-decoration: line-through;
+}
+
+.todo-app__list-item.checked::before {
+    background-image: url(/ToDoList/assets/images/checked.png);
+}
+
+.todo-app__cross {
+    position: absolute;
+    right: .2rem;
+    top: .2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: 2rem;
+    color: #004e9260;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.todo-app__cross:hover {
+    color: #004e92;
+}
